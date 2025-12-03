@@ -22,7 +22,7 @@ WORKDIR /var/www/html
 COPY . .
 
 # Cài đặt dependencies
-RUN composer update --no-dev --optimize-autoloader --no-interaction
+RUN rm -rf vendor composer.lock && composer install --no-dev --optimize-autoloader --no-interaction
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html
