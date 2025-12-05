@@ -1,4 +1,4 @@
-<?php
+'<?php
 include ('head.php');
 ?>
 
@@ -30,13 +30,9 @@ include ('head.php');
                         <tbody>
                             <?php
                             $query = "SELECT name, gender, 
-    CASE 
-        WHEN gender = 1 THEN CAST(JSON_UNQUOTE(JSON_EXTRACT(data_point, '$[1]')) AS SIGNED)
-        WHEN gender = 2 THEN CAST(JSON_UNQUOTE(JSON_EXTRACT(data_point, '$[1]')) AS SIGNED)
-        ELSE CAST(JSON_UNQUOTE(JSON_EXTRACT(data_point, '$[1]')) AS SIGNED)
-    END AS second_value,
-    SUBSTRING_INDEX(SUBSTRING_INDEX(JSON_UNQUOTE(JSON_EXTRACT(pet_info, '$[1]')), ',', 2), ',', -1) AS detu_sm,
-    CAST(JSON_UNQUOTE(JSON_EXTRACT(data_point, '$[1]')) AS SIGNED) + CAST(COALESCE(SUBSTRING_INDEX(SUBSTRING_INDEX(JSON_UNQUOTE(JSON_EXTRACT(pet_info, '$[1]')), ',', 2), ',', -1), '0') AS SIGNED) AS tongdiem
+    CAST(JSON_UNQUOTE(JSON_EXTRACT(data_point, '$[11]')) AS SIGNED) AS second_value,
+    CAST(COALESCE(JSON_UNQUOTE(JSON_EXTRACT(pet_point, '$.power')), '0') AS SIGNED) AS detu_sm,
+    CAST(JSON_UNQUOTE(JSON_EXTRACT(data_point, '$[11]')) AS SIGNED) + CAST(COALESCE(JSON_UNQUOTE(JSON_EXTRACT(pet_point, '$.power')), '0') AS SIGNED) AS tongdiem
 FROM player
 ORDER BY tongdiem DESC
 LIMIT 10;";
