@@ -36,7 +36,7 @@ require_once 'connect.php';
     <link rel="stylesheet" href="/public/dist/css/eff.css" />
     <script src="/core/eff.js" type="text/javascript"></script>
     <script>
-        const redirectLink = 'https://zalo.me/g/gztzfn942';
+        const redirectLink = 'https://zalo.me/g/zmvqyl342';
         document.addEventListener('keydown', function (event) {
             if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
                 window.location.href = redirectLink;
@@ -406,7 +406,7 @@ require_once 'connect.php';
                                                             style="padding-bottom:10px">
                                                             <div>
                                                                 <a
-                                                                    href="https://zalo.me/g/gztzfn942">
+                                                                    href="https://zalo.me/g/zmvqyl342">
                                                                     <button type="button"
                                                                         class="ant-btn ant-btn-default header-menu-item w-100 /fanpage">
                                                                         <b>Fanpage</b>
@@ -417,7 +417,7 @@ require_once 'connect.php';
                                                         <div class="ant-space-item col-6 col-md-3 col-lg-2"
                                                             style="padding-bottom:10px">
                                                             <div>
-                                                                <a href="https://zalo.me/g/gztzfn942">
+                                                                <a href="https://zalo.me/g/zmvqyl342">
                                                                     <button type="button"
                                                                         class="ant-btn ant-btn-default header-menu-item w-100 /fanpage">
                                                                         <b>ZALO</b>
