@@ -18,7 +18,7 @@ require_once '../core/head.php';
                 <div class="row">
                     <div class="col">
                         <h4>Phiên bản PC Windows</h4>
-                        <p>Link Tải Phiên Bản Windows: <a class="text-dark font-weight-bold" href="https://drive.google.com/file/d/1XWnlVGN_GPtpT9jwbdS9yLRSw93qMF1b/view?usp=sharing">Tải đây</a></p>
+                        <p>Link Tải Phiên Bản Windows: <a class="text-dark font-weight-bold" href="/download/ngocrongmup.rar">Tải đây</a></p>
                         <p>Hãy tải ngay để trải nghiệm Ngọc Rồng Múp!</p>
                     </div>
                 </div>
